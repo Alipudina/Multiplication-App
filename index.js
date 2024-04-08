@@ -43,12 +43,22 @@ btn.addEventListener('click', ev => {
 
 
     for (let i=1; i<=quantity; i++) {
-      let firstNumber= Math.ceil(Math.random() * 10);
+      // let firstNumber= Math.ceil(Math.random() * 10);
+      let firstNumber = Math.ceil(Math.random() * 9) + 1; // To remove Number 1
+
+
       while (firstNumber > radiosNumber) {
-        firstNumber= Math.ceil(Math.random() * 10);
+        // firstNumber= Math.ceil(Math.random() * 10);
+        firstNumber = Math.ceil(Math.random() * 9) + 1;
+
       }
-      let secondNumber= Math.ceil(Math.random() * 10);
+      // let secondNumber= Math.ceil(Math.random() * 10);
+      let secondNumber = Math.ceil(Math.random() * 9) + 1;  // To remove Number 1
+
+      
       let rightAnswer= firstNumber*secondNumber;
+
+
       rightAnswerArray.push(rightAnswer);
 
       let question= `<li>
