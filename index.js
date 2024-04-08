@@ -110,7 +110,7 @@ btn.addEventListener('click', ev => {
       }
 
     }
-    let noteText= `Deine Note ist <b>${studentNote}</b> von <b>${allQuestions}</b>`;
+    let noteText= `Deine Punktzahl ist <b>${studentNote}</b> von <b>${allQuestions}</b>`;
     submitQuestionsNote.innerHTML= noteText;
     submitQuestionsNote.style.display= 'block';
   })
